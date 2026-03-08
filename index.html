@@ -364,25 +364,39 @@
 </section>
 <!-- End paper abstract -->
 
-<!-- Figure: Overall Framework -->
 <section class="section">
   <div class="container is-max-desktop">
-    
     <h2 class="title is-3">Overall Framework</h2>
-
     <div class="content has-text-centered">
-      <img src="static/images/overall_framework.png" 
-           alt="Overall framework of the proposed method"
-           style="max-width:100%;">
+      <img src="static/images/overall_framework.png" alt="Overall framework" style="max-width:100%;">
     </div>
-
     <p class="has-text-centered">
-      <b>Figure 1.</b> Overview of the proposed neuromusculoskeletal learning framework. 
-      A reinforcement learning teacher policy is trained in simulation using a 
-      muscle-synergy action prior. The learned assistance strategy is then distilled 
-      into a deployable controller for real-time exoskeleton hardware.
+      We train a privileged teacher policy in neuromusculoskeletal simulation across randomized walking speeds and slopes, then distill it into an IMU-only student controller for real-time onboard deployment.
     </p>
+  </div>
+</section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Simulation Benefit</h2>
+    <div class="content has-text-centered">
+      <img src="static/images/sim_effect.png" alt="Simulation benefit" style="max-width:100%;">
+    </div>
+    <p class="has-text-centered">
+      In simulation, the learned assistance reduces effort-related metrics relative to the no-exoskeleton condition, with larger benefits at faster walking speeds.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Simulation to Real Transfer</h2>
+    <div class="content has-text-centered">
+      <img src="static/images/sim_vs_real.png" alt="Simulation versus real hardware" style="max-width:100%;">
+    </div>
+    <p class="has-text-centered">
+      The assistance strategy learned in simulation is preserved on the physical device, showing strong agreement between simulated and hardware torque profiles across matched conditions.
+    </p>
   </div>
 </section>
 

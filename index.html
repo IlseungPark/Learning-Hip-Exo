@@ -340,9 +340,17 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+        <p>
+        Developing exoskeleton controllers that generalize across diverse locomotor conditions typically requires extensive motion-capture data and biomechanical labeling, limiting scalability beyond instrumented laboratory settings. Here, we present a physics-based neuromusculoskeletal learning framework that trains a hip-exoskeleton control policy entirely in simulation, without motion-capture demonstrations, and deploys it on hardware via policy distillation. 
+        </p>
+        
+        <p>
+        A reinforcement learning teacher policy is trained using a muscle-synergy action prior over a wide range of walking speeds and slopes through a two-stage curriculum, enabling direct comparison between assisted and no-exoskeleton conditions. In simulation, exoskeleton assistance reduces mean muscle activation by up to 3.4% and mean positive joint power by up to 7.0% on level ground and ramp ascent, with benefits increasing systematically with walking speed. 
+        </p>
+        
+        <p>
+        On hardware, the assistance profiles learned in simulation are preserved across matched speed-slope conditions (r: 0.82 ± 0.19, RMSE: 0.03 ± 0.01 Nm/kg), providing quantitative evidence of sim-to-real transfer without additional hardware tuning. These results demonstrate that physics-based neuromusculoskeletal simulation can serve as a practical and scalable foundation for exoskeleton controller development, substantially reducing experimental burden during the design phase.
+        </p>
         </div>
       </div>
     </div>

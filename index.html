@@ -365,36 +365,36 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Overall Framework</h2>
+    <h2 class="title is-3 has-text-centered">From Neuromusculoskeletal Simulation to Wearable-Sensor Control</h2>
     <div class="content has-text-centered">
       <img src="static/images/overall_framework.png" alt="Overall framework" style="max-width:100%;">
     </div>
     <p class="has-text-centered">
-      We train a privileged teacher policy in neuromusculoskeletal simulation across randomized walking speeds and slopes, then distill it into an IMU-only student controller for real-time onboard deployment.
+      We first train a privileged teacher policy in predictive neuromusculoskeletal simulation across randomized walking speeds and slopes, then distill it into an IMU-only student controller for real-time onboard deployment. This creates a direct pipeline from physics-based simulation to wearable-sensor exoskeleton control.
     </p>
   </div>
 </section>
 
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Simulation Benefit</h2>
+    <h2 class="title is-3 has-text-centered">Learned Assistance Recovers Established Torque Structure</h2>
     <div class="content has-text-centered">
-      <img src="static/images/sim_effect.png" alt="Simulation benefit" style="max-width:100%;">
+      <img src="static/images/sim_profile.png" alt="Learned assistance profile compared with established controllers" style="max-width:100%;">
     </div>
     <p class="has-text-centered">
-      In simulation, the learned assistance reduces effort-related metrics relative to the no-exoskeleton condition, with larger benefits at faster walking speeds.
+      The learned assistance profile is not arbitrary: it recovers a waveform structure and peak timing that are broadly consistent with established exoskeleton control paradigms. This suggests that the simulation-trained controller discovers a biomechanically meaningful assistance strategy rather than merely exploiting the simulator.
     </p>
   </div>
 </section>
 
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Simulation to Real Transfer</h2>
+    <h2 class="title is-3 has-text-centered">Simulation-Learned Assistance Transfers to Hardware</h2>
     <div class="content has-text-centered">
       <img src="static/images/sim_vs_real.png" alt="Simulation versus real hardware" style="max-width:100%;">
     </div>
     <p class="has-text-centered">
-      The assistance strategy learned in simulation is preserved on the physical device, showing strong agreement between simulated and hardware torque profiles across matched conditions.
+      The assistance strategy learned in simulation is preserved on the physical device. Across matched speed-slope conditions, hardware torque profiles closely follow the simulated profiles, providing quantitative evidence that the learned controller transfers to real exoskeleton hardware without additional tuning.
     </p>
   </div>
 </section>
